@@ -1,0 +1,460 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Web模擬試験システム</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link href="test.css" rel="stylesheet" type="text/css" />
+
+<style>
+.hasBeenAnswer {
+	background: #5d9cec;
+	color:#fff;
+}
+
+</style>
+<script>
+	window.onload = function(){
+	var HH = 0;
+	var mm = 0;
+	var ss = 0;
+	var str = '';
+	var timer = setInterval(function(){
+	str = "";
+	if(++ss==60)
+	{
+	if(++mm==60)
+	{
+	mm=0;
+	}
+	ss=0;
+	}
+	str += HH < 10 ? "0" + HH : HH;
+	str += ":";
+	str+=mm<10?"0"+mm:mm;
+	str+=":";
+	str+=ss<10?"0"+ss:ss;
+	document.getElementById("times1").innerHTML = str;
+	document.getElementById("times2").innerHTML = str;
+	},1000);
+	};
+</script>	
+
+</head>
+
+<body>
+	<div class="main">
+		<!--nr start-->
+		<div class="test_main">
+			<div class="nr_left">
+				<div class="test">
+					<form action="" method="post">
+						<div class="test_title">
+							<p class="test_time">
+								<i id="times1">&#xe6fb;</i>
+							</p>
+							<font><input type="button" name="test_jiaojuan" value="採点する"></font>
+						</div>
+						
+							<div class="test_content">
+								<div class="test_content_title">
+									<h2>問題</h2>
+									<p>
+										<span></span><i class="content_lit">5</i><span>問，</span><span>合計</span><i class="content_fs">100</i><span>点</span>
+									</p>
+								</div>
+							</div>
+							<div class="test_content_nr">
+								<ul>
+									
+										<li id="qu_0_0">
+											<div class="test_content_nr_tt">
+												<i>1</i><span>(20点)</span><font>関係データベースの表に設定する主キー，外部キー及びインデックスのうち，一つの表に対して複数設定できるものだけを全て挙げたものはどれか</font><b class="icon iconfont">&#xe881;</b>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_1"
+																/>
+															
+															
+															<label for="0_answer_1_option_1">
+																ア.
+																<p class="ue" style="display: inline;">インデックス</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_2"
+																/>
+															
+															
+															<label for="0_answer_1_option_2">
+																イ.
+																<p class="ue" style="display: inline;">外部キー，インデックス</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_3"
+																/>
+															
+															
+															<label for="0_answer_1_option_3">
+																ウ.
+																<p class="ue" style="display: inline;">主キー</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_4"
+																/>
+															
+															
+															<label for="0_answer_1_option_4">
+																エ.
+																<p class="ue" style="display: inline;">主キー，外部キー，インデックス</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_1">
+											<div class="test_content_nr_tt">
+												<i>2</i><span>(20点)</span><font>PCのディスプレイに表示する文字や図形などのデータを格納する専用のメモリはどれか。</font><b class="icon iconfont">&#xe881;</b>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_1"
+																/>
+															
+															
+															<label for="0_answer_2_option_1">
+																ア.
+																<p class="ue" style="display: inline;">DVD-Video</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_2"
+																/>
+															
+															
+															<label for="0_answer_2_option_2">
+																イ.
+																<p class="ue" style="display: inline;">ROM</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_3"
+																/>
+															
+															
+															<label for="0_answer_2_option_3">
+																ウ.
+																<p class="ue" style="display: inline;">キャッシュメモリ</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_4"
+																/>
+															
+															
+															<label for="0_answer_2_option_4">
+																エ.
+																<p class="ue" style="display: inline;">グラフィックスメモリ</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_2">
+											<div class="test_content_nr_tt">
+												<i>3</i><span>(20点)</span><font>"男性のうち，20歳未満の人と65歳以上の人"に関する情報を検索するための検索式として，適切なものはどれか。</font><b class="icon iconfont">&#xe881;</b>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+													<li class="option">
+															
+														<input type="radio" class="radioOrCheck" name="answer3"
+															id="0_answer_3_option_1"
+														/>
+													
+													
+													<label for="0_answer_3_option_1">
+														ア.
+														<p class="ue" style="display: inline;">男性 AND（20歳未満 AND 65歳以上）</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer3"
+															id="0_answer_3_option_2"
+														/>
+													
+													
+													<label for="0_answer_3_option_2">
+														イ.
+														<p class="ue" style="display: inline;">男性 AND（20歳未満 OR 65歳以上）</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer3"
+															id="0_answer_3_option_3"
+														/>
+													
+													
+													<label for="0_answer_3_option_3">
+														ウ.
+														<p class="ue" style="display: inline;">男性 OR（20歳未満 AND 65歳以上）</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer3"
+															id="0_answer_3_option_4"
+														/>
+													
+													
+													<label for="0_answer_3_option_4">
+														エ.
+														<p class="ue" style="display: inline;">男性 OR（20歳未満 OR 65歳以上）</p>
+													</label>
+												</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_3">
+											<div class="test_content_nr_tt">
+												<i>4</i><span>(20点)</span><font>リスクマネジメントに含まれる四つのプロセスであるリスク対応，リスク特定，リスク評価，リスク分析を実施する順番として，適切なものはどれか。</font><b class="icon iconfont">&#xe881;</b>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+													<li class="option">
+															
+														<input type="radio" class="radioOrCheck" name="answer4"
+															id="0_answer_4_option_1"
+														/>
+													
+													
+													<label for="0_answer_4_option_1">
+														ア.
+														<p class="ue" style="display: inline;">リスク特定→リスク評価→リスク分析→リスク対応</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer4"
+															id="0_answer_4_option_2"
+														/>
+													
+													
+													<label for="0_answer_4_option_2">
+														イ.
+														<p class="ue" style="display: inline;">リスク特定→リスク分析→リスク評価→リスク対応</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer4"
+															id="0_answer_4_option_3"
+														/>
+													
+													
+													<label for="0_answer_4_option_3">
+														ウ.
+														<p class="ue" style="display: inline;">リスク評価→リスク特定→リスク分析→リスク対応</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer4"
+															id="0_answer_4_option_4"
+														/>
+													
+													
+													<label for="0_answer_4_option_4">
+														エ.
+														<p class="ue" style="display: inline;">リスク分析→リスク特定→リスク対応→リスク評価</p>
+													</label>
+												</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_4">
+											<div class="test_content_nr_tt">
+												<i>5</i><span>(20点)</span><font>Apacheと称されるオープンソースソフトウェアの用途はどれか。</font><b class="icon iconfont">&#xe881;</b>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+													<li class="option">
+															
+														<input type="radio" class="radioOrCheck" name="answer5"
+															id="0_answer_5_option_1"
+														/>
+													
+													
+													<label for="0_answer_5_option_1">
+														ア.
+														<p class="ue" style="display: inline;">DBMS</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer5"
+															id="0_answer_5_option_2"
+														/>
+													
+													
+													<label for="0_answer_5_option_2">
+														イ.
+														<p class="ue" style="display: inline;">OS</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer5"
+															id="0_answer_5_option_3"
+														/>
+													
+													
+													<label for="0_answer_5_option_3">
+														ウ.
+														<p class="ue" style="display: inline;">Webサーバソフトウェア</p>
+													</label>
+												</li>
+											
+												<li class="option">
+													
+														<input type="radio" class="radioOrCheck" name="answer5"
+															id="0_answer_5_option_4"
+														/>
+													
+													
+													<label for="0_answer_5_option_4">
+														エ.
+														<p class="ue" style="display: inline;">Webブラウザ</p>
+													</label>
+												</li>
+													
+												</ul>
+											</div>
+										</li>
+								
+								</ul>
+							</div>
+					</form>
+				</div>
+
+			</div>
+			<div class="nr_right">
+				<div class="nr_rt_main">
+					<div class="rt_nr1">
+						<div class="rt_nr1_title">
+							<h1>
+								<i class="icon iconfont">&#xe692;</i>解答欄
+							</h1>
+							<p class="test_time">
+								<i id="times2">&#xe6fb;</i>
+							</p>
+						</div>
+						
+							<div class="rt_content">
+								<div class="rt_content_tt">
+									<h2>問題</h2>
+									<p>
+										<span></span><i class="content_lit">5</i><span>問</span>
+									</p>
+								</div>
+								<div class="rt_content_nr answerSheet">
+									<ul>
+										
+											<li><a href="#qu_0_0">1<label for=""></a></li>
+										
+											<li><a href="#qu_0_1">2</a></li>
+										
+											<li><a href="#qu_0_2">3</a></li>
+										
+											<li><a href="#qu_0_3">4</a></li>
+										
+											<li><a href="#qu_0_4">5</a></li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--nr end-->
+		<div class="foot"></div>
+	</div>
+
+
+	<script>
+		
+		$(function() {
+			$('li.option label').click(function() {
+			debugger;
+				var examId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); 
+				var cardLi = $('a[href=#' + examId + ']'); 
+				
+				if(!cardLi.hasClass('hasBeenAnswer')){
+					cardLi.addClass('hasBeenAnswer');
+				}
+				
+			});
+		});
+	</script>
+<div style="text-align:center;">
+</div>
+</body>
+</html>
